@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-app-bg: #f6f5f4;
+  --color-app-panel: #ffffff;
+  --color-app-border: #d3d2d1;
+  --color-app-sidebar: #ebeae9;
+  --color-app-text: #1e1e1e;
+  --color-app-muted: #6b6b6b;
+  --color-app-accent: #3584e4;
+  --color-app-accent-soft: #d5e5fa;
+  --color-app-hover: #e8e8e8;
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-app-bg: #1e1e1e;
+    --color-app-panel: #242424;
+    --color-app-border: #3a3a3a;
+    --color-app-sidebar: #1b1b1b;
+    --color-app-text: #f5f5f5;
+    --color-app-muted: #9b9b9b;
+    --color-app-accent: #3584e4;
+    --color-app-accent-soft: #1c3a5e;
+    --color-app-hover: #2d2d2d;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background: var(--color-app-bg);
+  color: var(--color-app-text);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
